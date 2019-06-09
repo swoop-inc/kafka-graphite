@@ -7,19 +7,15 @@
   <groupId>com.criteo.kafka</groupId>
   <artifactId>kafka-graphite</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.5</version>
+  <version>1.1.1</version>
   <name>Kafka metrics output to Graphite</name>
   <url>https://github.com/emetriq/kafka-graphite/</url>
-
-  <prerequisites>
-    <maven>3.0.4</maven>
-  </prerequisites>
 
   <dependencies>
     <dependency>
       <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka_2.10</artifactId>
-      <version>0.8.2.1</version>
+      <artifactId>kafka_2.11</artifactId>
+      <version>1.1.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -58,9 +54,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
 
